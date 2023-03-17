@@ -1,6 +1,7 @@
 import noteModel from "../../../../DB/model/Note.model.js";
 import userModel from "../../../../DB/model/User.model.js";
 
+// Note Module
 export const getNoteModule = async (req, res, next) => {
   const notes = await noteModel.find({}).populate([
     {
