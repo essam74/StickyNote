@@ -11,6 +11,8 @@ export const getNoteModule = async (req, res, next) => {
   return res.json({ message: "Done", notes });
 };
 
+// Add Note
+
 export const addNote = async (req, res, next) => {
   try {
     const { title, description, userId } = req.body;
