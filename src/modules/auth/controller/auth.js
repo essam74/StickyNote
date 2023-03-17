@@ -4,7 +4,7 @@ import { hash } from "../../../utils/hashAndCompare.js";
 export const getAuthModule = (req, res, next) => {
   return res.json({ message: "Auth module" });
 };
-
+// SignUp Function
 export const signUp = async (req, res, next) => {
   try {
     const { email, password, userName, cPassword } = req.body;
@@ -34,7 +34,7 @@ export const signUp = async (req, res, next) => {
     return res.json({ message: "Catch error", error });
   }
 };
-
+// Login Function
 export const login = async (req, res, next) => {
   try {
     const { email, password } = req.body;
